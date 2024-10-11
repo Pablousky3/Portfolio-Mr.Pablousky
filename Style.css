@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin:0;
     box-sizing: border-box;
     /* (box-sizing: border-box;) esta propiedad hace que el modelo de caja de css 
     funciona de una forma más lógica para nosotros */
@@ -11,12 +11,16 @@
 
 header {
     height: 100vh;
-    background-color: rgb(200, 255, 0);
+    background-image: url(Espacio.gif);
+        background-size: cover; 
+        background-position: center; 
+        margin: 0;
+        padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 header button {
@@ -29,7 +33,19 @@ header button {
     font-weight: bold;
     /* la propiedad transition debe estar en el estado inicial */
     transition: 0.33s;
-    transform: skew(33deg);
+    transform: scale(1.05);
+}
+
+div .Botones{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+   
+    
+}
+button{
+    margin: 30px;
+    padding: 30px;
+    border-radius: 12px;
 }
 
 header button:hover{
@@ -40,105 +56,29 @@ header button:hover{
 }
 
 h1 {
-    /* font-size: 3.2 rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 6vw;
-    transform: skew(-25deg);
     animation: animate-title 6s infinite alternate;
 
 }
-
-h2{
-    font-size: 2.2rem; 
-}
-
-nav .menu-flex {
-    background-color: blueviolet;
-    padding: 2rem;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    /* gap: 2rem; */
-
-}
-
-
-nav .menu-flex a {
-    color: aliceblue;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: 0.33s;
-}
-
-nav .menu-flex a:hover{
-    color: blueviolet;
-   background-color: aliceblue;
-}
-
-
-img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-/* Gallery */
-#gallery {
-    padding: 6rem;
-    background-color: violet;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
-}
-
-#gallery-cont {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    gap: 1rem;
-   
-}
-
-#gallery .gallery-cont img {
-    object-fit: cover;
-    height: 100%;
-    max-width: 200px;
-    
-}
-
-
-
-
-
 
 /* animations */
 @keyframes animate-title {
 
     0% {
-        color: aqua;
+        color: rgb(102, 250, 250);
     }
-    50%{
-        color: deeppink;
-        transform: skew(25deg);
-    }
+    
     100% {
-        color: red;
+        transform: scale(1.05);
+        color: aliceblue;
     }
 }
 
 
-
-
-
-
-
 /* MEDIA-QUERY */
-
-/* dENTRO DE LOS () DEL MEDIAQUERY DEFINIMOS EL BRAKEPOINT EN PIXELES */
-
-/* max-width: 512px tambien se puede escribir como width<=512px */
 
 @media screen AND (Max-width:512px) {
   h1{
