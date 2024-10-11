@@ -1,2 +1,2 @@
 # Portfolio-Mr.Pablousky
-Mi portfolio de diseñador y desarrollador de videojuegos.
+Mi nombre es Pablo Menéndez-Morán Alba y soy un diseñador y desarrollador de videojuegos.
