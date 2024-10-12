@@ -69,14 +69,14 @@ h1 {
     font-family:'Times New Roman', Times, serif
 }
 
-/* Pagina web de información */
+/* PAGINA WEB INFORMACIÓN */
 
 .Info{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(145, 166, 167);
+    background: linear-gradient(to bottom, #acacac, #727272); 
 }
 .h1-Info {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -101,21 +101,21 @@ hr {
     margin: 0; 
 }
 
-.Yo {
-    background-color: rgb(138, 228, 49); 
-    color: rgb(7, 102, 16); 
+.Pantalla { 
+    color: rgb(7, 102, 16);
+    background: linear-gradient(to bottom, #37e918, #0d8725); 
     margin: 2rem;
     padding: 1rem; 
     
     border: 20px solid gray; 
     border-radius: 15px; 
+    box-shadow: -10px 6px 12px rgba(0, 0, 0, 0.659);
 }
 
 .Botones-Consola {
     display: flex;
-    justify-content: flex-start; /* Alinea los botones a la izquierda */
-    align-items: center; /* Centra verticalmente los botones */
-    gap: 0.5rem; /* Añade un espacio entre los botones y la imagen */
+    justify-content: flex-end; 
+    align-items: center; 
 }
 
 
@@ -133,7 +133,9 @@ hr {
     font-weight: bold; 
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 4rem;
+    margin-left: 1rem;
+    margin-right: 5rem;
+    box-shadow: -10px 6px 12px rgba(0, 0, 0, 0.659);
 }
 
 .Boton-A button:hover, .Boton-B button:hover {
@@ -144,16 +146,28 @@ hr {
 
 .imagen-consola {
     display: flex;
-    justify-content: flex-end; 
     align-items: center; 
     position: relative;
-    margin-right: 8rem;
-    margin-left: 8px;
 }
 
-.Cruzeta{
-    height:220px ;
-    width: 220px;
+.plus-symbol {
+    font-size: 350px; /* Tamaño del símbolo */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente */
+    color: #000000; /* Color */
+    margin-left: 6rem;
+    margin-right: 7rem;
+}
+  
+
+.Options-Symbol{
+    justify-content: flex-end;
+    width: 130px; 
+    height: 25px; 
+    border-radius: 40%; 
+    background-color: rgb(68, 68, 68);  
+    box-shadow: -10px 6px 12px rgba(0, 0, 0, 0.659);
+    margin-left: 2rem;
+    transform: rotate(-25deg);
 }
 
 
@@ -163,8 +177,10 @@ hr {
     font-size: 30px; 
     font-weight: bold; 
     cursor: pointer;
-
+    box-shadow: -10px 6px 12px rgba(0, 0, 0, 0.659);
 }
+
+
 
 
 
@@ -185,7 +201,7 @@ hr {
 
 /* MEDIA-QUERY */
 
-@media screen AND (Max-width:512px) {
+@media screen AND (Max-width:796px) {
   h1{
     font-size: 2rem;
     text-align: center;
@@ -196,7 +212,11 @@ hr {
     text-align: center;
     gap: 1rem;
   }
+  
 
+  .Options-Symbol{
+    display: none;
+  }
   
     
     
