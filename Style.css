@@ -6,12 +6,14 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.Home {
+    background-image: url(Espacio.gif);
+    background-size: cover; 
+        background-position: center; 
+}
 
 header {
     height: 100vh;
-    background-image: url(Espacio.gif);
-        background-size: cover; 
-        background-position: center; 
         margin: 0;
         padding: 0;
     display: flex;
@@ -42,6 +44,10 @@ button{
     border-radius: 12px;
 }
 
+a{
+    text-decoration: none;
+}
+
 header button:hover{
     cursor: pointer;
     color: blueviolet;
@@ -56,6 +62,29 @@ h1 {
     font-size: 6vw;
     animation: animate-title 3s infinite alternate;
     font-family:'Times New Roman', Times, serif
+}
+
+.Info{
+    background-color: rgb(13, 105, 131);
+    color: rgb(234, 109, 19);
+}
+.h1-Info {
+    display: flex;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    font-size: 3rem;
+    animation: none;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    margin-bottom: 20px;
 }
 
 /* animations */
