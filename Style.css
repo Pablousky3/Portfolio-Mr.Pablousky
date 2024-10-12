@@ -41,7 +41,7 @@ button{
     border-radius: 12px;
 }
 
-.Botones {
+.Botones-Index {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,9 +50,10 @@ button{
 
 a{
     text-decoration: none;
+    text-align: center;
 }
 
-header button:hover{
+.Botones-Index button:hover{
     cursor: pointer;
     color: blueviolet;
     background-color: aliceblue;
@@ -75,21 +76,19 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(13, 105, 131);
+    background-color: rgb(145, 166, 167);
 }
 .h1-Info {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    align-items: center;
     font-size: 3rem;
     animation: none;
     margin: 2rem;
-    color: rgb(234, 109, 19);
+    color: rgb(0, 0, 0);
 }
 
-.foto-perfil {
-    width: 150px;
-    height: 200px;
-    border-radius: 15%; 
-    margin: 3rem;
+.foto-personajes {
+    margin-top: 3rem;
 }
 
 p{
@@ -102,12 +101,72 @@ hr {
     margin: 0; 
 }
 
-.Yo{
-    background-color: rgb(103, 172, 35);
-    color: goldenrod;
+.Yo {
+    background-color: rgb(138, 228, 49); 
+    color: rgb(7, 102, 16); 
     margin: 2rem;
+    padding: 1rem; 
+    
+    border: 20px solid gray; 
+    border-radius: 15px; 
+}
+
+.Botones-Consola {
+    display: flex;
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+    align-items: center; /* Centra verticalmente los botones */
+    gap: 0.5rem; /* Añade un espacio entre los botones y la imagen */
+}
+
+
+.Botones-Consola button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background-color: rgb(198, 0, 0); 
+    color: rgb(0, 0, 0);  
+    font-size: 30px; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 4rem;
+}
+
+.Boton-A button:hover, .Boton-B button:hover {
+    background-color: darkred; 
+    transform: scale(1.1); 
+    color: antiquewhite;
+}
+
+.imagen-consola {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    position: relative;
+    margin-right: 8rem;
+    margin-left: 8px;
+}
+
+.Cruzeta{
+    height:220px ;
+    width: 220px;
+}
+
+
+.Boton-Volver{
+    background-color: rgb(56, 56, 56); 
+    color: rgb(255, 255, 255);  
+    font-size: 30px; 
+    font-weight: bold; 
+    cursor: pointer;
 
 }
+
+
 
 /* animations */
 
